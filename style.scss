@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=MuseoModerno:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pinyon+Script&family=Sacramento&display=swap');
+//basic changes for all tags
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+
+//============================================NAVBAR==========================================
+
+
+.navbar{
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    background-color:  rgba(grey,.4);
+}
+.navbar h1{
+    color: white;
+    font-family: 'Sacramento', cursive;
+
+    margin: 0 1.5vw 0 1.5vw;
+}
+.navbar h1:hover{
+   cursor: pointer;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+
+
+}
+
+//+++++++++++++++++the clickable buttons++++++++++++++++++++
+.navbar ul li{
+    color: black;
+}
+.navbar ul li:nth-child(1){
+    color:black;
+
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: pink;
+
+}
+.navbar ul li:nth-child(2){
+    color:black;
+
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: rgb(253, 253, 101);
+
+}
+.navbar ul li:nth-child(3){
+    color:black;
+
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: rgb(163, 163, 245);
+
+}
+.navbar ul li:nth-child(4){
+    color:black;
+
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: rgb(204, 248, 138);
+
+}.navbar ul li:nth-child(5){
+    color:black;
+
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: rgb(250, 203, 117);
+
+}
+
+
+
+//changing the on hover color of each of the buttons
+
+.navbar ul li:nth-child(1):hover{
+    color:whitesmoke;
+    background-color: rgb(233, 92, 115);
+
+
+}
+.navbar ul li:nth-child(2):hover{
+    color:black;
+    background-color: rgb(196, 183, 114);
+
+}
+.navbar ul li:nth-child(3):hover{
+    color:black;
+    background-color: rgb(116, 116, 248);
+
+}
+.navbar ul li:nth-child(4):hover{
+    color:black;
+    background-color: rgb(155, 218, 60);
+
+}.navbar ul li:nth-child(5):hover{
+    color:black;
+    background-color: rgb(252, 174, 29);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px 0 10px;
+
+    
+}
+.navbar ul li a:hover{
+    color: white;
+    font-style: italic;
+
+}
+
+//===========================================MAIN PART========================================
+
+//============================================================================================//
+//                                                                                            //
+//                                     HOME                                                   //
+//                                                                                            //
+//============================================================================================//
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .text_home{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 30vh;
+}
+
+
+//now we'll animate the text
+@keyframes falling{
+    from{
+        
+        transform: translateY(-35vh);
+    }
+    to{
+        
+        transform: translateY(0);
+    }
+}
+@keyframes side{
+    from{
+        transform: translateX(25vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes colors{
+    0%{background-color: pink;}
+    20%{background-color: rgb(253, 253, 101);}
+    40%{background-color: rgb(163, 163, 245);}
+    60%{background-color: rgb(204, 248, 138);}
+    80%{background-color: rgb(250, 203, 117);}
+    100%{background-color: pink;}
+}
+
+@keyframes text{
+    to{
+        background-color: grey;
+        color: whitesmoke;
+        border-radius: 1rem;
+        padding:0 7rem 0 7rem;
+    }
+}
+
+
+#home p:nth-child(1){
+    padding-left: 10px ;
+    font-size: 1.5rem;
+    animation: side 2.2s 1s ease alternate-reverse infinite;
+    cursor: pointer;
+}
+#home p:nth-child(2){
+    padding-left: 10px ;
+    font-size: 1.5rem;
+    animation: falling 2.2s 1s ease alternate-reverse infinite;
+    cursor: pointer;
+}
+
+#home h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+
+}
+
+#home h1:hover{
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    cursor: pointer;
+
+    animation: text 0.3s ease-in forwards;
+}
+
+#home{
+    animation: colors 20s 1.5s  infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//contacts part for home
+#home .logos_home ul{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+
+
+
+//\\\\\\\\\\\\\\\\\\\\\\BUTTONS\\\\\\\\\\\\\\\\\\\\\\\\//
+
+//creating the interactive buttons
+
+#home #contact ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+#home #facebook{
+    width: 30px;
+    height: 30px;
+    background-image:url(./logos/fb_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#home #linkedin{
+    width: 30px;
+    height:30px;
+    background-image:url(./logos/linkedin_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#home #github{
+    width: 30px;
+    height: 30px;
+    background-image:url(./logos/github_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#home #instagram{
+    width: 30px;
+    height: 30px;
+    background-image:url(./logos/insta_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+//changing color on hover
+
+
+//creating animation on hover
+@keyframes jump {
+    to{
+        transform: translateY(-1.5vh);
+    }
+}
+
+
+
+
+
+
+#home #facebook:hover{
+    background-image:url(./logos/fb.png);
+    animation: jump .3s linear forwards;
+
+}
+
+#home #linkedin:hover{
+    background-image:url(./logos/linkedin.png);
+    animation: jump .3s linear forwards;
+}
+
+#home #github:hover{
+    background-image:url(./logos/github.png);
+    animation: jump .3s linear forwards;
+}
+
+#home #instagram:hover{
+    background-image:url(./logos/insta.png);
+    animation: jump .3s linear forwards;
+}
+
+
+
+
+
+
+
+
+//============================================================================================//
+//                                                                                            //
+//                                     ABOUT                                                  //
+//                                                                                            //
+//============================================================================================//
+
+#about{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(253, 253, 101);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#about h5{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    border-radius: 10px;
+    
+}
+#about h5:hover{
+    cursor: pointer;
+}
+
+.headers span{
+    background-color: pink;
+    padding: 0 1vw;
+    
+    border-radius: 10px;
+}
+
+.headers span:hover{
+    background-color: rgb(255, 106, 243);
+    padding: 0 1.3vw;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+#about .about{
+    width: 70vw;
+    margin-top: 10vh;
+   
+
+}
+#about .education{
+    width: 70vw;
+ 
+}
+#about .languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#about .languages ul{
+    width: 40%vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#about .languages ul li:nth-child(1){
+    width: 50px;
+    height:50px;
+    background-image:url(./logos/c_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(2){
+    width: 50px;
+    height: 50px;
+    background-image:url(./logos/c++_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(3){
+    width: 50px;
+    height: 50px;
+    background-image:url(./logos/python_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(4){
+    width: 50px;
+    height: 50px;
+    background-image:url(./logos/html_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(5){
+    width: 50px;
+    height: 50px;
+    background-image:url(./logos/css_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(6){
+    width: 50px;
+    height: 50px;
+    background-image:url(./logos/js_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+#about .languages ul li:nth-child(1):hover{
+    background-image:url(./logos/c.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+#about .languages ul li:nth-child(2):hover{
+    background-image:url(./logos/c++.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+#about .languages ul li:nth-child(3):hover{
+    background-image:url(./logos/python.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+#about .languages ul li:nth-child(4):hover{
+    background-image:url(./logos/html.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+#about .languages ul li:nth-child(5):hover{
+    background-image:url(./logos/css.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+#about .languages ul li:nth-child(6):hover{
+    background-image:url(./logos/js.png);
+    animation: get_bigger .2s linear forwards;
+    cursor: pointer;
+}
+
+
+
+
+//education part
+
+#about .education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#about .education table{
+    width: 70vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+#about .education table:hover{
+    cursor: pointer;
+}
+#about .education table th{
+    font-size: 1.15rem;
+    //background-color: rgb(159, 238, 159);
+    border-bottom: 3px solid grey;
+}
+#about .education table td{
+    //background-color: rgb(238, 172, 238);
+}
+
+
+
+//============================================================================================//
+//                                                                                            //
+//                                 CERTIFICAIONS                                               //
+//                                                                                            //
+//============================================================================================//
+
+#certifications{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(163, 163, 245);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#certifications table{
+    width: 90%;
+    text-align: center;
+}
+#certifications th{
+    background-color: rgb(250, 91, 91);
+    color: white;
+
+    padding-right: 5vw;
+    
+}
+#certifications td{
+    background-color: rgb(146, 122, 233);
+    color:whitesmoke;
+}
+#certifications a{
+    text-decoration: none;
+    color: white;
+}
+#certifications a:hover{
+    text-decoration: none;
+    color: black;
+}
+#certifications tr td:first-child:hover{
+    background-color: rgb(216, 229, 231);
+    color:black;
+}
+#certifications h2:hover{
+    padding:0 2rem 0 2rem;
+    margin: 0 0 .8rem 0;
+    background-color: grey;
+    color: white;
+    border-radius:10px;
+    cursor: pointer;
+    
+    
+}
+
+//working with the table headers
+
+.table_header{
+    font-size: 1.1rem;
+    margin-top: 2vh;
+}
+.table_header:hover{
+    cursor: pointer;
+}
+.table_header span:hover{
+    color: whitesmoke;
+    background-color: rgb(4, 236, 167);
+    padding: 0 1.5vw;
+    cursor:pointer;
+    border-radius: 10px;
+}
+
+.table_header span{
+    background-color: rgb(245, 98, 12);
+    color: white;
+    padding: 0 1.5vw;
+    border-radius: 10px;
+}
+
+
+
+//============================================================================================//
+//                                                                                            //
+//                                  PROJECTS                                                  //
+//                                                                                            //
+//============================================================================================//
+
+#projects{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(204, 248, 138);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+//============================================================================================//
+//                                                                                            //
+//                                     CONTACT                                                //
+//                                                                                            //
+//============================================================================================//
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(250, 203, 117);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact h4{
+    font-size: 3rem;
+}
+#contact h4:hover{
+    font-size: 3rem;
+    border-bottom:5px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+//creating the interactive buttons
+
+#contact ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+
+#facebook{
+    width: 70px;
+    height: 70px;
+    background-image:url(./logos/fb_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#linkedin{
+    width: 70px;
+    height: 70px;
+    background-image:url(./logos/linkedin_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#github{
+    width: 70px;
+    height: 70px;
+    background-image:url(./logos/github_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+#instagram{
+    width: 70px;
+    height: 70px;
+    background-image:url(./logos/insta_g.png);
+    background-position: center;
+    background-size: cover;
+
+    margin:0 2rem 0 2rem;
+}
+
+
+
+
+//Defining the animation of the buttons
+@keyframes get_bigger {
+    to{
+        transform: scale(2,2);
+    }
+}
+
+
+//changing color and doing animation on hover
+
+#facebook:hover{
+    background-image:url(./logos/fb.png);
+    animation: get_bigger .3s linear forwards;
+
+}
+
+#linkedin:hover{
+    background-image:url(./logos/linkedin.png);
+    animation: get_bigger .3s linear forwards;
+}
+
+#github:hover{
+    background-image:url(./logos/github.png);
+    animation: get_bigger .3s linear forwards;
+}
+
+#instagram:hover{
+    background-image:url(./logos/insta.png);
+    animation: get_bigger .3s linear forwards;
+}
+
+
+//============================================================================================//
+//                                                                                            //
+//                                     FOOTER                                                 //
+//                                                                                            //
+//============================================================================================//
+
+.footer{
+    width: 100%;
+    height: 15vh;
+
+    background-color: grey;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
