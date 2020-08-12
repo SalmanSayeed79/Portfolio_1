@@ -1,5 +1,23 @@
 //============================================================================================//
 //                                                                                            //
+//                                     NAVBAR                                                 //
+//                                                                                            //
+//============================================================================================//
+let burger=document.querySelector("#burger")
+let ul_container=document.querySelector(".ul-container")
+burger.addEventListener('click',()=>{
+    ul_container.classList.toggle("show-from-left")
+})
+let buttons=document.querySelectorAll(".ul-container ul li")
+console.log(buttons)
+buttons.forEach(a=>{
+    a.addEventListener("click",()=>{
+        ul_container.classList.toggle("show-from-left")  
+    })
+})
+
+//============================================================================================//
+//                                                                                            //
 //                                     ABOUT                                                  //
 //                                                                                            //
 //============================================================================================//
@@ -24,9 +42,9 @@ education_files.removeChild(education_child);
 //====================Adding the items back when clicking the span button===============
 
 //defining the buttons
-let about_button=document.querySelector('#about_header span');
-let languages_button=document.querySelector('#languages_header span');
-let education_button=document.querySelector('#education_header span');
+let about_button=document.querySelector('#about_header #about-button');
+let languages_button=document.querySelector('#languages_header i');
+let education_button=document.querySelector('#education_header i');
 
 
 //defining the function for each button

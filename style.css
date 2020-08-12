@@ -112,12 +112,19 @@
 .navbar ul li a {
   text-decoration: none;
   color: black;
-  padding: 0 10px 0 10px;
+  padding: 0 1rem 0 1rem;
 }
 
 .navbar ul li a:hover {
   color: white;
   font-style: italic;
+}
+
+#burger {
+  display: none;
+  position: fixed;
+  top: 4vh;
+  right: 5vw;
 }
 
 #home {
@@ -464,6 +471,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -473,13 +482,16 @@
   list-style: none;
 }
 
+#about .languages ul li {
+  margin: 1rem 1rem;
+}
+
 #about .languages ul li:nth-child(1) {
   width: 50px;
   height: 50px;
   background-image: url(./logos/c_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(2) {
@@ -488,7 +500,6 @@
   background-image: url(./logos/c++_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(3) {
@@ -497,7 +508,6 @@
   background-image: url(./logos/python_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(4) {
@@ -506,7 +516,6 @@
   background-image: url(./logos/html_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(5) {
@@ -515,7 +524,6 @@
   background-image: url(./logos/css_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(6) {
@@ -524,7 +532,6 @@
   background-image: url(./logos/js_g.png);
   background-position: center;
   background-size: cover;
-  margin: 0 2rem 0 2rem;
 }
 
 #about .languages ul li:nth-child(1):hover {
@@ -598,6 +605,12 @@
 #about .education table th {
   font-size: 1.15rem;
   border-bottom: 3px solid grey;
+}
+
+i {
+  cursor: pointer;
+  background-color: orange;
+  border-radius: 50%;
 }
 
 #certifications {
@@ -831,7 +844,12 @@
           justify-content: center;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
+  .navbar h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: large;
+  }
   .navbar ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,10 +857,53 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     list-style: none;
+  }
+  .ul-container {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  }
+  .ul-container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .ul-container ul li {
+    height: 12vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .ul-container ul li a {
+    font-size: 3rem;
+  }
+  .show-from-left {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .navbar ul li {
     font-size: .7rem;
@@ -852,6 +913,13 @@
     font-family: 'Sacramento', cursive;
     font-size: 1.5rem;
     margin: 0 .5vw 0 .5vw;
+  }
+  #burger {
+    display: block;
+    cursor: pointer;
+  }
+  #home {
+    width: 100%;
   }
   #home h1 {
     font-family: 'Lobster', cursive;

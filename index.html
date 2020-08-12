@@ -11,19 +11,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salman_Sayeed</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <!--creating the navigation bar is the first thing to do. Here I'll create a sticky navbar-->
     <div class="navbar">
     
         <h1>Salman Sayeed</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#certifications">Ceritfications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="ul-container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Ceritfications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <span class="material-icons" id="burger">menu</span>
     </div>
     <div class="main">
         <div class="pages" id="home">
@@ -53,11 +58,11 @@
 
         <div class="pages" id="about">
             <div class="about">
-                <h5 id="about_header" class="headers">About <span>></span></h5>
+                <h5 id="about_header" class="headers">About <i class="material-icons" id="about-button">expand_more</i></h5>
                 <p>I am currently a fresher at Bangladesh University of Engineering And Technology pursuing my dream of becoming a successful computer scientist. I play video games and watch tv series in my free time. I consider myself a lazy person, so whenever I find something repetitive, I try to automate it. I've used python to automate several of my "repetitive tasks". I also learned web-dev to pass my time and create a few stuff to soothe my brain. And I hate anime  </p>
             </div>
             <div class="languages">
-                <h5 id="languages_header" class="headers">Languages <span>></span></h5>
+                <h5 id="languages_header" class="headers">Languages <i class="material-icons" id="about-button">expand_more</i></h5>
                 <ul>
                     <li id="logo_lan_1"></li>
                     <li id="logo_lan_2"></li>
@@ -69,7 +74,7 @@
                 </ul>
             </div>
             <div class="education">
-                <h5 id="education_header" class="headers">Education <span>></span></h5>
+                <h5 id="education_header" class="headers">Education <i class="material-icons" id="about-button">expand_more</i></h5>
                 <table>
                     <tr><th>Degree</th><th>GPA</th><th>Instisute</th><th>Passing Year</th></tr>
                     <tr><td>BSc</td><td>Still to appear</td><td>Bangladesh University of Engineering And Technology</td><td>2024(expected)</td></tr>
