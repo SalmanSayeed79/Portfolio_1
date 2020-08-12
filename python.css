@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=MuseoModerno:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pinyon+Script&family=Sacramento&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-color: lightgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+}
+
+.main-container .text-container {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.main-container .text-container a {
+  position: absolute;
+  top: 2vh;
+  left: 4vw;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: .2rem .8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.main-container .text-container a:hover {
+  background-color: #2ca82c;
+}
+
+.main-container .text-container h1 {
+  text-align: center;
+  font-family: "Lobster" ,"sans-serif";
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: green;
+  margin-top: 2rem;
+}
+
+.main-container .card-container {
+  width: 90vw;
+  min-height: 70vh;
+  margin-top: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container .card-container .card {
+  width: 40vw;
+  min-height: 40vh;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 2px grey;
+          box-shadow: 2px 2px 2px grey;
+  border-radius: 1rem;
+  margin: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .card-container .card h2 {
+  font-family: 'MuseoModerno';
+  font-weight: bolder;
+  color: green;
+  border-bottom: 2px solid grey;
+}
+
+.main-container .card-container .card p {
+  width: 30vw;
+  margin: 1rem 0;
+}
+
+.main-container .card-container .card h4 {
+  color: #4cc24c;
+}
+
+.main-container .card-container .card #lan {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.main-container .card-container .card #links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .card-container .card #links a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-container .card-container .card #links li {
+  margin: .5rem;
+  padding: 0.2rem .5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.main-container .card-container .card #links li:nth-child(1) {
+  background-color: #fc5185;
+}
+
+.main-container .card-container .card #links li:nth-child(1):hover {
+  background-color: #ff4b4b;
+}
+
+.main-container .card-container .card #links li:nth-child(2) {
+  background-color: #43dde6;
+}
+
+.main-container .card-container .card #links li:nth-child(2):hover {
+  background-color: #8de1e6;
+}
+
+.main-container .card-container .card #links li:nth-child(3) {
+  background-color: #364f6b;
+  color: white;
+}
+
+.main-container .card-container .card #links li:nth-child(3):hover {
+  background-color: #638cbb;
+}
+
+.main-container .card-container .card #links span {
+  margin: 0 .2rem;
+}
+
+@media all and (max-width: 600px) {
+  .main-container .card-container .card {
+    width: 70vw;
+  }
+  .main-container .card-container .card p {
+    width: 50vw;
+  }
+}
+/*# sourceMappingURL=python.css.map */

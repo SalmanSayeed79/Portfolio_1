@@ -703,12 +703,29 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#projects button {
+  margin-top: 2vh;
+  padding: .5rem 1rem;
+  background-color: #11ce11;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#projects button:hover {
+  background-color: #12b312;
 }
 
 #contact {
