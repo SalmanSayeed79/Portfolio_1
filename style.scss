@@ -698,6 +698,18 @@ i{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    #resume{
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: white;
+        background-color: rgb(233, 92, 115);
+        padding: .3rem 1rem;
+        border-radius: 1rem;
+        &:hover{
+            background-color: rgb(250, 91, 91);
+        }
+    }
 }
 
 #contact h4{

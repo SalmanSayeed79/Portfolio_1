@@ -747,6 +747,19 @@ i {
           justify-content: space-evenly;
 }
 
+#contact #resume {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #e95c73;
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+}
+
+#contact #resume:hover {
+  background-color: #fa5b5b;
+}
+
 #contact h4 {
   font-size: 3rem;
 }
