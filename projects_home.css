@@ -98,6 +98,7 @@
 
 .main-container .button-container a:nth-child(1):hover {
   background-color: #ffdf76;
+  color: white;
 }
 
 .main-container .button-container a:nth-child(2) {
@@ -106,6 +107,7 @@
 
 .main-container .button-container a:nth-child(2):hover {
   background-color: #73b0c9;
+  color: white;
 }
 
 .main-container .button-container a:nth-child(3) {
@@ -114,6 +116,7 @@
 
 .main-container .button-container a:nth-child(3):hover {
   background-color: orangered;
+  color: white;
 }
 
 .main-container .button-container a:nth-child(4) {
@@ -122,14 +125,43 @@
 
 .main-container .button-container a:nth-child(4):hover {
   background-color: #64a564;
+  color: white;
 }
 
 .main-container .button-container a:nth-child(5) {
+  background-color: lightpink;
+  color: grey;
+}
+
+.main-container .button-container a:nth-child(5):hover {
+  background-color: #e75369;
+  color: white;
+}
+
+.main-container .button-container a:nth-child(6) {
+  background-color: lightseagreen;
+  color: grey;
+}
+
+.main-container .button-container a:nth-child(6):hover {
+  background-color: #407976;
+}
+
+.main-container .button-container a:nth-child(7) {
   background-color: gray;
   color: white;
 }
 
-.main-container .button-container a:nth-child(5):hover {
+.main-container .button-container a:nth-child(7):hover {
   background-color: darkgrey;
+}
+
+.main-container .button-container a:nth-child(6) {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.main-container .button-container a:nth-child(6):hover {
+  background-color: #407976;
 }
 /*# sourceMappingURL=projects_home.css.map */

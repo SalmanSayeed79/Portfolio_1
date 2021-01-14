@@ -68,6 +68,7 @@
                 background-color: yellow;
                 &:hover{
                     background-color: rgb(255, 223, 118);
+                    color: white;
                    
                 }
             }
@@ -75,25 +76,50 @@
                 background-color: skyblue;
                 &:hover{
                     background-color: rgb(115, 176, 201);
+                    color: white;
                 }
             }
             &:nth-child(3){
                 background-color: orange;
                 &:hover{
                     background-color: orangered;
+                    color: white;
                 }
             }
             &:nth-child(4){
                 background-color: lightgreen;
                 &:hover{
                     background-color: rgb(100, 165, 100);
+                    color: white;
                 }
             }
             &:nth-child(5){
+                background-color: lightpink;
+                color: grey;
+                &:hover{
+                    background-color: rgb(231, 83, 105);
+                    color: white;
+                }
+            }
+            &:nth-child(6){
+                background-color: lightseagreen;
+                color: grey;
+                &:hover{
+                    background-color: rgb(64, 121, 118);
+                }
+            }
+            &:nth-child(7){
                 background-color: gray;
                 color: white;
                 &:hover{
                     background-color: darkgrey;
+                }
+            }
+            &:nth-child(6){
+                background-color: lightseagreen;
+                color: white;
+                &:hover{
+                    background-color: rgb(64, 121, 118);
                 }
             }
         }
